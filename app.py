@@ -1,7 +1,8 @@
-from email_sender import send_email
+
 import time
 from datetime import datetime
 import streamlit as st
+from email_sender import send_email
 
 
 st.title("Stock Price Alert System")
