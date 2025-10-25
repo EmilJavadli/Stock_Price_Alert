@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from price_checker import get_last_price
 import smtplib
 from email.mime.text import MIMEText
