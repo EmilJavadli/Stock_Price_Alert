@@ -1,6 +1,0 @@
-cash_url = "https://demo.trading212.com/api/v0/equity/account/cash"
-info_url = "https://demo.trading212.com/api/v0/equity/account/info"
-orders_url = "https://demo.trading212.com/api/v0/equity/orders"
-portfolio_url = "https://demo.trading212.com/api/v0/equity/portfolio"
-metadata_url = "https://demo.trading212.com/api/v0/equity/metadata/exchanges"
-history_url = "https://demo.trading212.com/api/v0/equity/history/orders"
