@@ -1,0 +1,5 @@
+dotenv
+pandas
+os 
+base64
+requests
