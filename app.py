@@ -9,7 +9,10 @@ st.title("Stock Price Alert System")
 ticker = st.text_input("Ticker Symbol", value="^VIX")
 alert_price = st.number_input("Alert Price", value=16.0)
 requested_email = st.text_input('Email', value='')
-interval = st.selectbox("Check Interval", ["Every Hour", "Every 30 Minutes", "Every 15 Minutes", "Every 5 Minutes"])
+interval = st.selectbox("Check Interval", ["Every Hour", 
+                                           "Every 30 Minutes", 
+                                           "Every 15 Minutes", 
+                                           "Every 5 Minutes"])
 
 if st.button("Start Monitoring"):
     st.success(f"Monitoring {ticker} - Alert when price <= {alert_price}")

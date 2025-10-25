@@ -1,14 +1,11 @@
 from dotenv import load_dotenv
-import os
 from price_checker import get_last_price
 import smtplib
 from email.mime.text import MIMEText
 import logging
+import streamlit as st
 
 logger = logging.getLogger(__name__)
-
-
-load_dotenv()
 
 def send_email(ticker: str, alert_price: float, requested_email: str) -> str:
     """
@@ -31,9 +28,9 @@ def send_email(ticker: str, alert_price: float, requested_email: str) -> str:
     if alert_price <= 0:
         raise ValueError("Alert price must be positive")
     
-    app_email = os.getenv('GOOGLE_EMAIL')
-    app_password = os.getenv('GOOGLE_APP_PASSWORD')
-    
+    app_email = st.secrets['GOOGLE_EMAIL']
+    app_password = st.secrets['GOOGLE_APP_PASSWORD'
+    ]
     if not app_email or not app_password:
         raise ValueError("Email credentials not found in environment variables")
     
